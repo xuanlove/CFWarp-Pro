@@ -664,7 +664,7 @@ green " 如上方显示IPV4地址：8.…………，则说明成功啦！\n 如
 }
 
 function upcore(){
-wget -N --no-check-certificate https://raw.githubusercontent.com/xuanlove/CFWarp-Pro/upcore.sh&& chmod +x upcore.sh && ./upcore.sh
+wget -N --no-check-certificate https://github.com/xuanlove/CFWarp-Pro/raw/main/upcore.sh&& chmod +x upcore.sh && ./upcore.sh
 }
 
 function iptables(){
@@ -753,12 +753,12 @@ systemctl status wg-quick@wgcf
 }
 
 function up4(){
-wget -N --no-check-certificate https://raw.githubusercontent.com/xuanlove/CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
+wget -N --no-check-certificate https://github.com/xuanlove/CFWarp-Pro/raw/main/main/multi.sh && chmod +x multi.sh && ./multi.sh
 }
 
 function up6(){
 echo -e nameserver 2a00:1098:2c::1 > /etc/resolv.conf
-wget -6 -N --no-check-certificate https://raw.githubusercontent.com/xuanlove/CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
+wget -6 -N --no-check-certificate https://github.com/xuanlove/CFWarp-Pro/raw/main/main/multi.sh && chmod +x multi.sh && ./multi.sh
 }
 
 #主菜单
@@ -1220,12 +1220,12 @@ systemctl status wg-quick@wgcf
 }
 
 function up4(){
-wget -N --no-check-certificate https://raw.githubusercontent.com/xuanlove/CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
+wget -N --no-check-certificate https://github.com/xuanlove/CFWarp-Pro/raw/main/main/multi.sh && chmod +x multi.sh && ./multi.sh
 }
 
 function up6(){
 echo -e nameserver 2a00:1098:2c::1 > /etc/resolv.conf
-wget -6 -N --no-check-certificate https://raw.githubusercontent.com/xuanlove/CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
+wget -6 -N --no-check-certificate https://github.com/xuanlove/CFWarp-Pro/raw/main/main/multi.sh && chmod +x multi.sh && ./multi.sh
 }
 
 function wro646(){
@@ -1236,7 +1236,7 @@ if [ "$main" -lt 5 ]|| [ "$minor" -lt 6 ]; then
 fi
 apt update
 apt -y --no-install-recommends install openresolv dnsutils wireguard-tools
-wget -N -6 https://raw.githubusercontent.com/xuanlove/CFWarp-Pro/wgcf
+wget -N -6 https://github.com/xuanlove/CFWarp-Pro/raw/main/wgcf
 cp wgcf /usr/local/bin/wgcf
 sudo chmod +x /usr/local/bin/wgcf
 echo | wgcf register
@@ -1270,7 +1270,7 @@ if [ "$main" -lt 5 ]|| [ "$minor" -lt 6 ]; then
 fi
 apt update
 apt -y --no-install-recommends install openresolv dnsutils wireguard-tools
-wget -N -6 https://raw.githubusercontent.com/xuanlove/CFWarp-Pro/wgcf
+wget -N -6 https://github.com/xuanlove/CFWarp-Pro/raw/main/wgcf
 cp wgcf /usr/local/bin/wgcf
 sudo chmod +x /usr/local/bin/wgcf
 echo | wgcf register
@@ -1303,7 +1303,7 @@ if [ "$main" -lt 5 ]|| [ "$minor" -lt 6 ]; then
 fi
 apt update
 apt -y --no-install-recommends install openresolv dnsutils wireguard-tools
-wget -N -6 https://raw.githubusercontent.com/xuanlove/CFWarp-Pro/wgcf
+wget -N -6 https://github.com/xuanlove/CFWarp-Pro/raw/main/wgcf
 cp wgcf /usr/local/bin/wgcf
 sudo chmod +x /usr/local/bin/wgcf
 echo | wgcf register
